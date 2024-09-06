@@ -11,7 +11,7 @@ install:
 	ln -rsf ${DESTDIR}/usr/lib64/libpolkit-gobject-1.so.0.0.0 ${DESTDIR}/usr/lib64/libpolkit-gobject-1.so.0
 	ln -rsf ${DESTDIR}/usr/lib64/libpolkit-gobject-1.so.0 ${DESTDIR}/usr/lib64/libpolkit-gobject-1.so
 	mkdir -p ${DESTDIR}/usr/include/polkit-1
-	cp -rf headers/* ${DESTDIR}/usr/include/polkit-1/polkit
+	cp -rf headers ${DESTDIR}/usr/include/polkit-1/polkit
 	mkdir -p ${DESTDIR}/usr/lib64/pkgconfig
 	cp -f polkit-gobject-1.pc ${DESTDIR}/usr/lib64/pkgconfig/polkit-gobject-1.pc
 
